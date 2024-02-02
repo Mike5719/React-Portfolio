@@ -8,17 +8,11 @@ export default function Nav() {
     <Navbar
       links={[
         <Link key={1} className="nav-link text-light" to="/">
-          About Me
+          Home
         </Link>,
         <Link key={2} className="nav-link text-light" to="/about">
-          Portfolio
+          About Us
         </Link>,
-         <Link key={3} className="nav-link text-light" to="/about">
-         Contact
-       </Link>,
-        <Link key={4} className="nav-link text-light" to="/about">
-        Resume
-      </Link>,
       ]}
     />
   );
