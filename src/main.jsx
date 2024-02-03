@@ -9,7 +9,7 @@ import './index.css';
 import App from './App';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
+import ProjectList from './pages/Portfolio';
 import Resume from './pages/Resume';
 
 // Define the accessible routes, and which components respond to which URL
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'Portfolio',
-        element: <Portfolio />,
+        element: <ProjectList />,
       },
       {
         path: 'Resume',
