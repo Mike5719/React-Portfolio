@@ -1,8 +1,7 @@
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
-export default function NavTabs () {
+export default function NavTabs() {
 
     const currentPage = useLocation().pathname;
 
