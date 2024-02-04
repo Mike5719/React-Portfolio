@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return (
-        <div>
+        <div className="about-title">
             <h1>About Me</h1>
             <img src="./avatar.jpg" alt="avatar" />
             <p className="pageText">
