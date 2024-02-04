@@ -1,7 +1,5 @@
 import { useState, useRef } from "react";
 
-//TODO: FINISH REQUIREMENTS
-
 export default function Contact() {
   const [errors, setErrors] = useState([]);
   const formRef = useRef(null);
@@ -11,13 +9,21 @@ export default function Contact() {
     setErrors([]);
     const formData = new FormData(event.target);
 
+    const name = formData.get("name");
     const email = formData.get("email");
     const message = formData.get("message");
 
     let passesValidation = true;
-    if (!email) {
+    if (!name) {
       setErrors((prev) => {
-        return [...prev, "Email is required"];
+        return [...prev, "Name is required"];
+      });
+      passesValidation = false;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !email.match(emailRegex)) {
+      setErrors((prev) => {
+        return [...prev, "Valid email is required"];
       });
       passesValidation = false;
     }
@@ -31,7 +37,6 @@ export default function Contact() {
       return;
     }
     console.log(email, message);
-    // event.target.reset();
     formRef.current.reset();
   };
   return (
@@ -39,7 +44,11 @@ export default function Contact() {
       ref={formRef}
       onSubmit={onSubmit}
       style={{ display: "flex", flexDirection: "column" }}
-    >
+
+    > <div style={{ display: "flex", flexDirection: "column" }}>
+        <label htmlFor="name-input">Name:</label>
+        <input id="name-input" name="name" />
+      </div>
       <div style={{ display: "flex", flexDirection: "column" }}>
         <label htmlFor="name-input">Email:</label>
         <input id="name-input" name="email" />
@@ -53,7 +62,7 @@ export default function Contact() {
           {error}
         </span>
       ))}
-      <button>Send</button>
+      <button className="submitButton">Send</button>
     </form>
   );
 };
