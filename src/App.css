@@ -1,108 +1,140 @@
 /* App.jsx */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:#aeb8fe;
-    color: #333
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .header {
-    background-color: #27187e;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .footer {
-    background-color: #27187e;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #aeb8fe;
+  color: #333
+}
 
-  .footer-icons {
-    font-size: 24px;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .footer-icons a {
-    margin-right: 30px;
-  }
+.header {
+  background-color: #27187e;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-  .icon {
-    font-size: 48px;
-  }
+.footer {
+  background-color: #27187e;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
 
-  .pageText {
-    color: #0d1b2a;
-    font-size: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+.footer-icons {
+  font-size: 24px;
+}
 
-  .submitButton {
-    background-color: antiquewhite;
-    font-weight: bold;
-  }
+.footer-icons a {
+  margin-right: 30px;
+}
 
-  /* Portfolio page */
+.icon {
+  font-size: 48px;
+}
+
+.pageText {
+  color: #0d1b2a;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Portfolio page */
 
 .project-list-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .page-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .project-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .project-item {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
-  .project-name {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .project-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .project-links {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .project-link {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .project-link:hover {
-    background-color: #0056b3;
-  }
-  
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.project-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Page */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitButton {
+  background-color: antiquewhite;
+  font-weight: bold;
+}
+
+.notify {
+  color: red;
+}
+
+/* header */
+.header_name {
+  text-align:center;
+  color: #d4a373;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* resume page */
+.resume-link {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.resume-container {
+  margin-bottom: 20px;
+}

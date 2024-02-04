@@ -9,11 +9,11 @@ export default function App() {
   return (
     <div className='container'>
       <div className='header'>
-      <Header />
+        <Header />
       </div>
       <Outlet />
       <div className='footer'>
-      <Footer />
+        <Footer />
       </div>
     </div>
   );

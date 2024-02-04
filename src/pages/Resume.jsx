@@ -1,16 +1,24 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa';
 
 
 export default function Resume() {
 
-return (
-    <div>
-        <h1>Resume</h1>
-        <p className='pageText'>Please feel free to view my resume by clicking on this link.</p>
-        <p>
-        <a href="https://linkedin.com" target='_blank' className="icon"> <FaLinkedin /> </a>  
-        </p>
-    </div>
-);
+    return (
+        <div className='resume-container'>
+            <h1>Proficiencies:</h1>
+            <ul className='pageText'>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Express.js</li>
+                <li>React.js</li>
+            </ul>
+            <a href="/path/to/resume.pdf" download className='resume-link'>Download Resume</a>
+        </div>
+    );
 };

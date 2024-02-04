@@ -13,6 +13,7 @@ export default function Contact() {
     const email = formData.get("email");
     const message = formData.get("message");
 
+    //ensure all fields are populated with valid input from the user
     let passesValidation = true;
     if (!name) {
       setErrors((prev) => {
@@ -23,7 +24,7 @@ export default function Contact() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !email.match(emailRegex)) {
       setErrors((prev) => {
-        return [...prev, "Valid email is required"];
+        return [...prev, "Valid email address required"];
       });
       passesValidation = false;
     }
@@ -40,25 +41,26 @@ export default function Contact() {
     formRef.current.reset();
   };
   return (
+    //define form structure
     <form
       ref={formRef}
       onSubmit={onSubmit}
-      style={{ display: "flex", flexDirection: "column" }}
+      className="contact"
 
-    > <div style={{ display: "flex", flexDirection: "column" }}>
+    > <div className="contact">
         <label htmlFor="name-input">Name:</label>
         <input id="name-input" name="name" />
       </div>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div className="contact">
         <label htmlFor="name-input">Email:</label>
         <input id="name-input" name="email" />
       </div>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div className="contact">
         <label htmlFor="message-input">Message:</label>
         <textarea id="message-input" name="message" />
       </div>
       {errors.map((error) => (
-        <span key={error} style={{ color: "red" }}>
+        <span key={error} className="notify">
           {error}
         </span>
       ))}
