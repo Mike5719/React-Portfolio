@@ -13,7 +13,7 @@ To install this app, the user will need to open a terminal at the root of the ap
 Here's a screenshot of the deployed application's landing page:
 ![Portfolio Landing Page](<./public/portfolio.png>)
 
-The website can be accessed using this link:
+The deployed application can be accessed using this link:
 https://react-portfolio-839ad9.netlify.app/
 
 
