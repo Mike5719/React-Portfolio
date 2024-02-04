@@ -21,7 +21,7 @@ https://react-portfolio-839ad9.netlify.app/
 
 Various activities from Module 20 were used as guide.
 
-Tutor Wesley Clements assisted me with writing the onSubmit function in the Contact.jsx file.
+Tutor Wesley Clements assisted me with writing the code for the Contact() function in the Contact.jsx file.
 
 
 ## License
