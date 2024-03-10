@@ -17,6 +17,8 @@ export default function Resume() {
                 <li>MongoDB</li>
                 <li>Express.js</li>
                 <li>React.js</li>
+                <li>Handlebars</li>
+                <li>Webpack</li>
             </ul>
             <a href="/path/to/resume.pdf" download className='resume-link'>Download Resume</a>
         </div>
