@@ -20,7 +20,7 @@ export default function Resume() {
                 <li>Handlebars</li>
                 <li>Webpack</li>
             </ul>
-            <a href="/path/to/resume.pdf" download className='resume-link'>Download Resume</a>
+            {/* <a href="/path/to/resume.pdf" download className='resume-link'>Download Resume</a> */}
         </div>
     );
 };
